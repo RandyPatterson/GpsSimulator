@@ -29,7 +29,7 @@ namespace IoTGpsSimulator
         {
             var configurationBuilder = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                .AddJsonFile("appsettings.prod.json",optional: true, reloadOnChange: false);
+                .AddJsonFile("appsettings.prod.json",optional: true, reloadOnChange: true);
 
             _configuration = configurationBuilder.Build();
         }
