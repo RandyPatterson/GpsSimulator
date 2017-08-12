@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace IoTGpsSimulator
+﻿namespace IoTGpsSimulator
 {
     public class Payload
     {
@@ -18,13 +14,13 @@ namespace IoTGpsSimulator
         {
             public geoJson(decimal latitude, decimal longitude)
             {
-                this.type = "Point";
+                this.Type = "Point";
                 //GeoJSON is Longitude,Latitude
-                this.coordinates = new[] { longitude, latitude };
+                this.Coordinates = new[] { longitude, latitude };
             }
 
-            public string type { get; set; }
-            public decimal[] coordinates { get; set; }
+            public string Type { get; set; }
+            public decimal[] Coordinates { get; set; }
         }
 
     }

@@ -1,6 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.Configuration;
 using System.Threading;
-using Microsoft.Extensions.Configuration;
 
 namespace IoTGpsSimulator
 {
